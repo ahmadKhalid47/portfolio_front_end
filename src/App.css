@@ -1,38 +1,231 @@
-.App {
-  text-align: center;
+.bg-dark-blue {
+  background-color: #140757;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-dark-blue {
+  color: #140757;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-blue-grandiant {
+  background: linear-gradient(to right, #cdffd8, #94b9ff);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-blue {
+  background-color: #5e17eb;
 }
-
-.App-link {
-  color: #61dafb;
+.bg-black {
+  background-color: black;
 }
-
-@keyframes App-logo-spin {
+.bg-purple-gradiant {
+  background: linear-gradient(to right, #8c52ff, #ff914d);
+}
+.bg-purple {
+  background-color: #8c52ff;
+}
+.loadingdiv {
+  overflow: hidden;
+  background-color: inherit;
+  border-radius: inherit;
+}
+.loading {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white, transparent);
+  position: relative;
+  animation: ease-in-out 1s loading infinite;
+  color: transparent;
+}
+@keyframes loading {
   from {
-    transform: rotate(0deg);
+    left: -100%;
   }
   to {
-    transform: rotate(360deg);
+    left: 150%;
   }
+}
+
+* {
+  font-family: "Concert One", sans-serif;
+  padding: 0%;
+  margin: 0%;
+}
+.gradiant-panel {
+  background: linear-gradient(to right, grey, white);
+}
+.p-6 {
+  padding: 6rem;
+}
+.px-6 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.ps-6 {
+  padding-left: 6rem;
+}
+.pe-6 {
+  padding-right: 6rem;
+}
+.bg-wheat {
+  background-color: #ffa500;
+}
+.bg-orange {
+  background-color: #ff914d;
+}
+.pointer {
+  cursor: pointer;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.responsive-flex {
+  display: flex;
+  justify-content: space-around;
+  height: fit-content;
+}
+.project-container-width {
+  width: 70vw;
+}
+.menu-container-width {
+  width: 20vw;
+  height: initial;
+}
+.intro_div {
+  padding-left: 2vw;
+}
+
+.slider {
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.slide {
+  display: inline-block;
+}
+
+.name-padding {
+  padding-left: 0.5rem;
+}
+.h-60 {
+  height: 75%;
+}
+.h-40 {
+  height: 25%;
+}
+.card-forntsize {
+  font-size: 100%;
+}
+.card-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.card-image {
+  width: 150%;
+  height: 150%;
+}
+
+.password-card {
+  width: 300px;
+  position: fixed;
+  bottom: 20%;
+  left: 50%;
+  translate: -50%;
+  z-index: 500;
+}
+
+.buttons-design {
+  text-decoration: none;
+  border: solid;
+}
+.buttons-design:hover {
+  background-color: transparent;
+}
+
+.hover-effect:hover {
+  transform: scale(0.9);
+  transition: 0.3s all ease-in-out;
+  /* box-shadow: 2px 2px 6px yellow, -2px -2px 6px yellow, -2px 2px 6px yellow,
+    2px -2px 6px yellow; */
+}
+.card-detail {
+  padding: 0.75rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .h-60 {
+    height: 70%;
+  }
+  .h-40 {
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .h-60 {
+    height: 60%;
+  }
+  .h-40 {
+    height: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 575px) {
+  .card-forntsize {
+    font-size: 90%;
+  }
+  .card-detail {
+    padding: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .responsive-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-container-width {
+    width: 90vw;
+  }
+  .menu-container-width {
+    width: 55vw;
+    margin: 1rem;
+    padding-top: 1rem;
+    position: relative;
+    right: 0vh;
+    height: fit-content;
+  }
+  .intro_div {
+    padding-left: 0px;
+  }
+}
+
+.intro-margin {
+  padding: 0px 1.25rem;
+}
+
+@media screen and (max-width: 350px) {
+  .intro-margin {
+    font-size: 1.15rem;
+    padding: 0px 1rem;
+  }
+  .name {
+    font-size: 1.45rem;
+  }
+}
+
+.scroll-style {
+  overflow: auto;
+}
+
+.scroll-style::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scroll-style::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
 }
