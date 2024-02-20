@@ -3,7 +3,7 @@ import Section1Context from "./Section1Context";
 import { useContext, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
-
+import AdminValidationContext from "./AdminValidationContext";
 function Footer() {
   const adminPassword = process.env.REACT_APP_ADMIN_PASSWORD;
   const [password_card_shower, setPassword_card_shower] = useState(false);
@@ -11,12 +11,16 @@ function Footer() {
   const Section1ContextGetter = useContext(Section1Context);
   const { menuLoading } = Section1ContextGetter;
   const [goToAdminPage, setGoToAdminPage] = useState(false);
+  const { adminValidation, setAdminValidation } = useContext(
+    AdminValidationContext
+  );
 
   if (goToAdminPage) {
     if (password !== adminPassword) {
       alert("wrong password");
       setGoToAdminPage(false);
     } else {
+      setAdminValidation(true);
       return <Navigate to="/adminPage" />;
     }
   }
