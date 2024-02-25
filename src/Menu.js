@@ -6,15 +6,23 @@ function Menu() {
   let Section1ContextGetter = useContext(Section1Context);
   let { menuLoading } = Section1ContextGetter;
 
+  function downloadFunction() {
+    let aTag = document.createElement("a");
+    aTag.href = "http://127.0.0.1:3000/AhmadResume.pdf";
+    aTag.setAttribute("download", "AhmadResume.pdf");
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  }
+
   return (
     <div className="d-flex flex-column justify-content-end align-items-start menu-container-width">
-      <a
-        href="/frontend/public/cv1.pdf"
-        download
-        className="text-decoration-none rounded-5 bg-dark-blue text-primary pt-2 pb-3 px-4 h4 w-100 hover-effect"
+      <button
+        onClick={downloadFunction}
+        className="text-decoration-none rounded-5 bg-dark-blue text-primary pt-2 pb-3 px-4 h4 w-100 hover-effect text-start border-0"
       >
         {menuLoading ? <Loader width={"100%"} /> : "Resume"}
-      </a>
+      </button>
       <a
         href="#Project"
         className="text-decoration-none rounded-5 bg-dark-blue text-primary pt-2 pb-3 px-4 h4 w-100 hover-effect"
