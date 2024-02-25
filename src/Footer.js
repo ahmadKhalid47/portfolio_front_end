@@ -11,9 +11,7 @@ function Footer() {
   const Section1ContextGetter = useContext(Section1Context);
   const { menuLoading } = Section1ContextGetter;
   const [goToAdminPage, setGoToAdminPage] = useState(false);
-  const { adminValidation, setAdminValidation } = useContext(
-    AdminValidationContext
-  );
+  const { setAdminValidation } = useContext(AdminValidationContext);
 
   if (goToAdminPage) {
     if (password !== adminPassword) {

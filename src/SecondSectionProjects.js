@@ -29,7 +29,7 @@ function SecondSectionProject() {
         sm={12}
         className="rounded-4 px-5 py-1 mb-2 bg-primary text-dark-blue"
       >
-        {loading ? <Loader /> : "HTML Projects"}
+        {loading ? <Loader /> : "Javascript Projects"}
       </Col>
       <Col sm={12} className="slider pt-2 pb-1 px-3 mb-2">
         {loading ? (

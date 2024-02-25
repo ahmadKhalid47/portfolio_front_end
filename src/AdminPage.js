@@ -14,6 +14,13 @@ function AdminPage() {
     AdminValidationContext
   );
 
+  window.onload(() => {
+    console.log("hello");
+  });
+  
+  setAdminValidation(true);
+  console.log(adminValidation);
+
   return (
     <div className="bg-dark-blue pb-5 text-primary">
       <EditProfile />
