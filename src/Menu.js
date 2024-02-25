@@ -8,7 +8,7 @@ function Menu() {
 
   function downloadFunction() {
     let aTag = document.createElement("a");
-    aTag.href = "http://127.0.0.1:3000/AhmadResume.pdf";
+    aTag.href = `AhmadResume.pdf`;
     aTag.setAttribute("download", "AhmadResume.pdf");
     document.body.appendChild(aTag);
     aTag.click();
