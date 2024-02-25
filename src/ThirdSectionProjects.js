@@ -32,7 +32,7 @@ function ThirdSectionProject() {
     <Row className="d-flex justify-content-start align-items-center">
       <Col
         sm={12}
-        className="rounded-4 px-5 py-1 mb-2 bg-primary text-dark"
+        className="rounded-4 px-5 py-1 mb-2 bg-primary text-dark-blue"
       >
         {loading ? <Loader /> : "HTML Projects"}
       </Col>
