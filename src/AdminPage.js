@@ -13,10 +13,6 @@ function AdminPage() {
   const { adminValidation, setAdminValidation } = useContext(
     AdminValidationContext
   );
-
-  window.onload(() => {
-    console.log("hello");
-  });
   
   setAdminValidation(true);
   console.log(adminValidation);

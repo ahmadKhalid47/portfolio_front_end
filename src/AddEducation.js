@@ -1,21 +1,3 @@
-// import { Form,Button } from "react-bootstrap";
-// function AddEducation() {
-//     return (
-//       <Form className="py-5 px-3 ">
-//         <h1>Add education</h1>
-//         <Form.Label className="h4 pt-2">Education name</Form.Label>
-//         <Form.Control type="text" />
-//         <Form.Label className="h4 pt-2">About education</Form.Label>
-//         <Form.Control type="text" />
-//         <Button size="lg" className="mt-2" style={{ float: "inline-end" }}>
-//           submit
-//         </Button>
-//       </Form>
-//     );
-// }
-
-// export default AddEducation;
-
 import { Form, Button } from "react-bootstrap";
 import axios from "axios";
 import { useState } from "react";

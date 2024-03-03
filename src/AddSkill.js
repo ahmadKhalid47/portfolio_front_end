@@ -4,7 +4,6 @@ import { useState } from "react";
 
 function AddSkill() {
   const api_key = process.env.REACT_APP_API_KEY;
-
   const [skillName, setSkillName] = useState(null);
 
   async function dataSubmit() {

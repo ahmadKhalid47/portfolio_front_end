@@ -1,5 +1,5 @@
 import { Form,Button } from "react-bootstrap";
-function AddProjectSection3(params) {
+function AddProjectSection3() {
     return (
       <Form className="py-5 px-3">
         <h1>Add new Project Section</h1>
