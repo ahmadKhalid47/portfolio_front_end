@@ -40,7 +40,7 @@ function Education() {
           ? educationData.map((item, key) => (
               <div
                 key={key}
-                className="pointer gradiant-panel px-4 rounded-4 py-1 text-dark-blue hover-effect"
+                className="pointer gradiant-panel px-4 rounded-4 py-1 text-dark-blue"
                 style={{
                   zIndex: educationNum === key ? "100" : "0",
                   width: "50%",
