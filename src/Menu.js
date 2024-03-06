@@ -8,8 +8,8 @@ function Menu() {
 
   function downloadFunction() {
     let aTag = document.createElement("a");
-    aTag.href = `AhmadResume.pdf`;
-    aTag.setAttribute("download", "AhmadResume.pdf");
+    aTag.href = `AhmadRazaResume.pdf`;
+    aTag.setAttribute("download", "AhmadRazaResume.pdf");
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
