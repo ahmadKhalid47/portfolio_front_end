@@ -17,6 +17,7 @@ function EditProfile() {
     fomrData.append("image", image);
     fomrData.append("name", name);
     fomrData.append("about", about);
+    console.log(FormData)
     await axios.post(`${api_key}/profile`, fomrData);
   }
 
